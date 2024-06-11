@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAED8EC3-66C2-4F16-8576-365D99AC1A8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtoTamirPro</RootNamespace>
+    <AssemblyName>OtoTamirPro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="arac_bakim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arac_bakim.Designer.cs">
+      <DependentUpon>arac_bakim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="araç.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="araç.Designer.cs">
+      <DependentUpon>araç.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fatura.Designer.cs">
+      <DependentUpon>fatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fatura2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fatura2.Designer.cs">
+      <DependentUpon>fatura2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayit.Designer.cs">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri.Designer.cs">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtoTamirProDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtoTamirProDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Oto_Tamir_Pro_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Oto_Tamir_Pro_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevu.Designer.cs">
+      <DependentUpon>randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="randevu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevu2.Designer.cs">
+      <DependentUpon>randevu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="arac_bakim.resx">
+      <DependentUpon>arac_bakim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="araç.resx">
+      <DependentUpon>araç.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fatura.resx">
+      <DependentUpon>fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fatura2.resx">
+      <DependentUpon>fatura2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayit.resx">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri.resx">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="randevu.resx">
+      <DependentUpon>randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randevu2.resx">
+      <DependentUpon>randevu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OtoTamirProDataSet.xsc">
+      <DependentUpon>OtoTamirProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet.xss">
+      <DependentUpon>OtoTamirProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet1.xsc">
+      <DependentUpon>OtoTamirProDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet1.xss">
+      <DependentUpon>OtoTamirProDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet2.xsc">
+      <DependentUpon>OtoTamirProDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet2.xss">
+      <DependentUpon>OtoTamirProDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet3.xsc">
+      <DependentUpon>OtoTamirProDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet3.xss">
+      <DependentUpon>OtoTamirProDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet4.xsc">
+      <DependentUpon>OtoTamirProDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet4.xss">
+      <DependentUpon>OtoTamirProDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet5.xsc">
+      <DependentUpon>OtoTamirProDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet5.xss">
+      <DependentUpon>OtoTamirProDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet6.xsc">
+      <DependentUpon>OtoTamirProDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet6.xss">
+      <DependentUpon>OtoTamirProDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet7.xsc">
+      <DependentUpon>OtoTamirProDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet7.xss">
+      <DependentUpon>OtoTamirProDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet8.xsc">
+      <DependentUpon>OtoTamirProDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OtoTamirProDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtoTamirProDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtoTamirProDataSet8.xss">
+      <DependentUpon>OtoTamirProDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Oto_Tamir_Pro_DBDataSet.xsc">
+      <DependentUpon>Oto_Tamir_Pro_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Oto_Tamir_Pro_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Oto_Tamir_Pro_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oto_Tamir_Pro_DBDataSet.xss">
+      <DependentUpon>Oto_Tamir_Pro_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Oto Tamir Pro DB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Resim11.jpg" />
+    <None Include="Resources\search-interface-symbol.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\fleet-management.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\warehouse.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\Resim1.jpg" />
+    <None Include="Resources\5ea31249-adfb-401e-a82e-2ebcba1093b0.png" />
+    <None Include="Resources\car.png" />
+    <None Include="Resources\teamwork.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
